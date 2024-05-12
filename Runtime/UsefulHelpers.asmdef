@@ -1,0 +1,16 @@
+{
+    "name": "UsefulHelpers",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6022154eb400b39419f59fa201e99402"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

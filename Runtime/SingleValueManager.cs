@@ -1,4 +1,6 @@
+#if ODIN_INSPECTOR
 using Sirenix.OdinInspector;
+#endif
 using UnityEngine;
 using UsefulExtensions.MonoBehaviour;
 
@@ -7,8 +9,17 @@ public abstract class SingleValueManager<T, TValue> : MonoBehaviour where T : Si
     private static T _instance;
     public static T Instance => _instance;
 
-    [SerializeField, ReadOnly] protected TValue defaultValue;
-    [ShowInInspector, ReadOnly] protected TValue _currentValue;
+#if ODIN_INSPECTOR
+    [SerializeField, ReadOnly]
+#endif
+
+    protected TValue defaultValue;
+
+#if ODIN_INSPECTOR
+    [ShowInInspector, ReadOnly]
+#endif
+
+    protected TValue _currentValue;
 
     public TValue DefaultValue => defaultValue;
 

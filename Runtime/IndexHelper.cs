@@ -5,7 +5,9 @@ namespace UsefulHelpers.Index
 {
     public static class IndexHelper
     {
+#if ODIN_INSPECTOR
         [Sirenix.OdinInspector.Button]
+#endif
         public static void TurnIndices90DegreesCounterClockwise(ref Vector2Int centerIndex, ref Vector2Int gridSize, IList<Vector2Int> indicesToTurn)
         {
             var oldCenterIndex = centerIndex;
@@ -14,7 +16,9 @@ namespace UsefulHelpers.Index
             gridSize = new Vector2Int(gridSize.y, gridSize.x);
         }
 
+#if ODIN_INSPECTOR
         [Sirenix.OdinInspector.Button]
+#endif
         public static void TurnIndices90DegreesClockwise(ref Vector2Int centerIndex, ref Vector2Int gridSize, IList<Vector2Int> indicesToTurn)
         {
             var oldCenterIndex = centerIndex;
@@ -23,7 +27,9 @@ namespace UsefulHelpers.Index
             gridSize = new Vector2Int(gridSize.y, gridSize.x);
         }
 
+#if ODIN_INSPECTOR
         [Sirenix.OdinInspector.Button]
+#endif
         public static void TurnIndices90DegreesCounterClockwise(ref Vector2Int centerIndex, ref Vector2Int gridSize, ICollection<Vector2Int> indicesToTurn)
         {
             var oldCenterIndex = centerIndex;
@@ -32,7 +38,9 @@ namespace UsefulHelpers.Index
             SetOffsetIndicesBasedOnSizeAndCenterIndex(gridSize, centerIndex, indicesToTurn);
         }
 
+#if ODIN_INSPECTOR
         [Sirenix.OdinInspector.Button]
+#endif
         public static void TurnIndices90DegreesClockwise(ref Vector2Int centerIndex, ref Vector2Int gridSize, ICollection<Vector2Int> indicesToTurn)
         {
             var oldCenterIndex = centerIndex;

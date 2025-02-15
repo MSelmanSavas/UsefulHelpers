@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+#if ODIN_INSPECTOR
 using Sirenix.OdinInspector;
+#endif
 using UnityEngine;
 using UsefulExtensions.MonoBehaviour;
 
@@ -34,13 +36,17 @@ public class ImageScaler : MonoBehaviour
         image.localScale = curve.Evaluate(reverse ? 0 : 1) * image.localScale;
     }
 
+#if ODIN_INSPECTOR
     [Button]
+#endif
     public void Scale(float duration = 1, float delay = 0)
     {
         this.StopStartCoroutine(ref _currentCoroutine, ScaleCoroutine(duration, delay));
     }
 
+#if ODIN_INSPECTOR
     [Button]
+#endif
     public void ScaleReverse(float duration = 1, float delay = 0)
     {
         this.StopStartCoroutine(ref _currentCoroutine, ScaleCoroutine(duration, delay, true));

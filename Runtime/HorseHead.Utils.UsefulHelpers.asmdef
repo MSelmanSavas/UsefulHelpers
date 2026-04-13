@@ -1,6 +1,6 @@
 {
-    "name": "UsefulHelpers",
-    "rootNamespace": "",
+    "name": "HorseHead.Utils.UsefulHelpers",
+    "rootNamespace": "HorseHead.Utils.UsefulHelpers",
     "references": [
         "GUID:6022154eb400b39419f59fa201e99402"
     ],

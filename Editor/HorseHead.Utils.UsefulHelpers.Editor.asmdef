@@ -1,6 +1,6 @@
 {
-    "name": "UsefulHelpers.Editor",
-    "rootNamespace": "",
+    "name": "HorseHead.Utils.UsefulHelpers.Editor",
+    "rootNamespace": "HorseHead.Utils.UsefulHelpers.Editor",
     "references": [],
     "includePlatforms": [
         "Editor"
